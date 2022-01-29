@@ -4,7 +4,7 @@ const productController = require('../controllers/productreviewsController')
 const reviewController = require('../controllers/reviewController')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 router.get('/products', productController.viewProducts);
